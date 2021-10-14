@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+
+class shape
+{
+
+	double ans;//instance variable
+
+	public:
+
+	void area(double r)//method variable
+	{
+		ans=3.14*r*r;
+		cout<<"area of circle is:"<<ans<<endl;
+	}
+
+
+	void area(double h,double b)//method variable
+	{	
+		ans=.5*h*b;
+		cout<<"area of triangle is:"<<ans<<endl;
+	}
+
+
+	void area(int s)//method variable
+	{	
+		ans=s*s;
+		cout<<"area of square is:"<<ans<<endl;
+	}
+};
+
+
+
+int main()
+{
+	//function call
+	shape s;
+	s.area(6);
+	s.area(1.2,3.5);s.area(3.2);
+}
